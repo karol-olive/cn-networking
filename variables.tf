@@ -41,7 +41,7 @@ variable "database_subnets" {
     availability_zone = string
   }))
   default     = []
-  description = "Database subnets list. This kind of subnet is private and doens't have connection with internet and have network acl's"
+  description = "Database subnets list. This kind of subnet is private and doens't have connection with internet and need to have network acl's"
 }
 
 variable "netacl_rules" {
