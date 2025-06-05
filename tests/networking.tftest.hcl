@@ -1,5 +1,8 @@
-run "validate_min_network_requirements" {
+provider "aws" {
+  region = "eu-west-1"
+}
 
+run "validate_min_network_requirements" {
   module {
     source = "./"
   }
