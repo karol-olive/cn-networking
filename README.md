@@ -1,4 +1,12 @@
 <!-- BEGIN_TF_DOCS -->
+## Terraform Module cn-networking
+Module responsible for the networking CloudNova Project
+
+## For local test run
+``` 
+terraform init --backend=false && terraform test
+``` 
+
 
 
 ## Requirements
