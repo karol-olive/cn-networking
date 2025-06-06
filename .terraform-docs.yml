@@ -8,6 +8,14 @@ sections:
   show: []
 
 content: |-
+  ## Terraform Module cn-networking
+  Module responsible for the networking CloudNova Project
+
+  ## For local test run
+  ``` 
+  terraform init --backend=false && terraform test
+  ``` 
+  
   {{ .Header }}
   
   {{ .Requirements }}

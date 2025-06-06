@@ -1,4 +1,4 @@
-project_name = "linuxtips-vpc"
+project_name = "cloudnova-vpc"
 vpc_cidr     = "10.0.0.0/16"
 public_subnets = [
   {
