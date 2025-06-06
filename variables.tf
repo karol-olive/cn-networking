@@ -1,17 +1,18 @@
 ## GENERAL ##
 variable "project_name" {
-  type = string
+  type        = string
+  description = "The project name to compose the resources name"
 }
 
 ## VPC ##
 variable "vpc_cidr" {
   type        = string
-  description = "CIDR VPC"
+  description = "VPC CIDR block"
 }
 
 variable "vpc_additional_cidrs" {
   type        = list(string)
-  description = "CIDR's addicional list"
+  description = "CIDR's block addicional list"
   default     = []
 }
 
