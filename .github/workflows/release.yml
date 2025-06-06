@@ -1,8 +1,10 @@
 name: "Terraform Module Networking // Release"
+
 on:
-  push:
-    branches:
-      - main
+  workflow_run:
+    workflows: [Terraform Module Networking // CI]
+    types: [completed]
+    branches: [main]
 
 jobs:
   docs:
@@ -17,9 +19,7 @@ jobs:
         with:
           working-dir: .
           config-file: .terraform-docs.yml
-          git-commit-message: "docs(terraform): generated documentation [skip ci]"
-          git-push-user-name: "Terraform Docs [Bot]"
-          git-push-user-email: "Terraform Docs [Bot] <no-replay@no-replay.com>"
+          git-commit-message: "docs(terraform): generated documentation"
           git-push: "true"
 
   release:
@@ -48,5 +48,3 @@ jobs:
         env:
           GIT_AUTHOR_NAME: "Release [Bot]"
           GIT_AUTHOR_EMAIL: "Release [Bot] <no-replay@no-replay.com>"
-          GIT_COMMITTER_NAME: "Release [Bot]"
-          GIT_COMMITTER_EMAIL: "Release [Bot] <no-replay@no-replay.com>"
