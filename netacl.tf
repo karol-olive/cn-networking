@@ -1,4 +1,5 @@
 resource "aws_network_acl" "database" {
+  #checkov:skip=CKV2_AWS_1:The ACL will just be apply when the subnet database was created. Not mandatory
   count = length(var.database_subnets)
 
   vpc_id = aws_vpc.main.id
