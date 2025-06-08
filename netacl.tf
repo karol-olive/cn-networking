@@ -38,7 +38,7 @@ resource "aws_network_acl_rule" "allow_rules" {
 
   count = length(var.netacl_rules)
 
-  network_acl_id = var.netacl_rules[count.index].network_acl_id
+  network_acl_id = aws_network_acl.database[count.index].id
   rule_number    = var.netacl_rules[count.index].rule_number
   rule_action    = var.netacl_rules[count.index].rule_action
 

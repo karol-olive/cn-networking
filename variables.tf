@@ -47,20 +47,18 @@ variable "database_subnets" {
 
 variable "netacl_rules" {
   type = list(object({
-    network_acl_id = string
-    rule_number    = number
-    rule_action    = string
-    protocol       = string
-    cidr_block     = string
-    from_port      = number
-    to_port        = number
+    rule_number = number
+    rule_action = string
+    protocol    = string
+    cidr_block  = string
+    from_port   = number
+    to_port     = number
   }))
   default     = []
   description = <<EOD
     List of Network ACL's for database subnet if applicable.
 
     Must contain:
-      * network_acl_id: the subnet where will apply the ACL, normally database subnets.
       * rule_number: Number of the rule. Remember that rules are evaluated starting with the lowest numbered, more information here. https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html
       * rule_action: Allow or Deny.
       * protocol: The kind of protocol, to all use "-1" 
