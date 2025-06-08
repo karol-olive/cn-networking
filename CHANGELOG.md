@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/karol-olive/cn-networking/compare/v1.0.1...v1.0.2) (2025-06-08)
+
+
+### Bug Fixes
+
+* availability zone distribution ([481c931](https://github.com/karol-olive/cn-networking/commit/481c931677efdbc2a06e36d5666df87acbbe3f33))
+
 ## [1.0.1](https://github.com/karol-olive/cn-networking/compare/v1.0.0...v1.0.1) (2025-06-08)
 
 
