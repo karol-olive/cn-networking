@@ -57,7 +57,6 @@ variable "netacl_rules" {
   default     = []
   description = <<EOD
     List of Network ACL's for database subnet if applicable.
-
     Must contain:
       * rule_number: Number of the rule. Remember that rules are evaluated starting with the lowest numbered, more information here. https://docs.aws.amazon.com/vpc/latest/userguide/nacl-rules.html
       * rule_action: Allow or Deny.
