@@ -6,6 +6,14 @@
 * change to the correct route table association ([28086d4](https://github.com/karol-olive/cn-networking/commit/28086d478825967dd2e476b7d7926380cee71b99))
 * remove network_acl_id from variable ([c152f8c](https://github.com/karol-olive/cn-networking/commit/c152f8c7a01439da82698a43a71a09c2823e836d))
 
+## [1.0.1](https://github.com/karol-olive/cn-networking/compare/v1.0.0...v1.0.1) (2025-06-08)
+
+
+### Bug Fixes
+
+* change to the correct route table association ([28086d4](https://github.com/karol-olive/cn-networking/commit/28086d478825967dd2e476b7d7926380cee71b99))
+* remove network_acl_id from variable ([c152f8c](https://github.com/karol-olive/cn-networking/commit/c152f8c7a01439da82698a43a71a09c2823e836d))
+
 # 1.0.0 (2025-06-06)
 
 
